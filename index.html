@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Yiqihualong </title>
+  <link rel="stylesheet" href="https://unpkg.com/carbon-components@latest/css/carbon-components.css" />
+  <link rel="stylesheet" href="css/track.css">
+</head>
+
+<body class="bx--body p20">
+  <!-- <img id="img" src="hand.jpg"/>  -->
+  <div class="p20">
+    This website is designed to draw a dragon tracking the hand movement.
+    FPS is based on the performance of your browser
+    click the toggle video button to start.
+  </div>
+  <div class="mb10">
+    <button  id="trackbutton" class="bx--btn bx--btn--secondary" type="button" disabled>
+      Toggle Video
+    </button>
+    <div id="updatenote" class="updatenote mt10"> loading model ..</div>
+  </div>
+  <video class="videobox canvasbox" autoplay="autoplay" id="myvideo" style="display: none;"></video>
+  <canvas id="canvas" class="border canvasbox"></canvas>
+  
+  <div style="display:none;">
+    <img id="source"
+         src="images/dragon.jpg"
+         width="300" height="227">
+  </div>
+
+  <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
+  <script src="js/handtrack.min.js"> </script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
