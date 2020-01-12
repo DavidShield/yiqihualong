@@ -4,36 +4,146 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>Yiqihualong </title>
-  <link rel="stylesheet" href="https://unpkg.com/carbon-components@latest/css/carbon-components.css" />
-  <link rel="stylesheet" href="css/track.css">
+  <title>Yiqihualong</title>
+  <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="resources/css/style.css">
 </head>
 
-<body class="bx--body p20">
-  <!-- <img id="img" src="hand.jpg"/>  -->
-  <div class="p20">
-    This website is designed to draw a dragon tracking the hand movement.
-    FPS is based on the performance of your browser
-    click the toggle video button to start.
-  </div>
-  <div class="mb10">
-    <button  id="trackbutton" class="bx--btn bx--btn--secondary" type="button" disabled>
-      Toggle Video
-    </button>
-    <div id="updatenote" class="updatenote mt10"> loading model ..</div>
-  </div>
-  <video class="videobox canvasbox" autoplay="autoplay" id="myvideo" style="display: none;"></video>
-  <canvas id="canvas" class="border canvasbox"></canvas>
-  
-  <div style="display:none;">
-    <img id="source"
-         src="images/outline_dragon.png"
-         width="300" height="227">
-  </div>
+<body>
+  <header>
+    <nav>
+      <div class="row">
+        <ul class="main-nav js--main-nav">
+          <li><a href="#tops">Tops</a></li>
+          <li><a href="#works">My works</a></li>
+          <li><a href="#about">About Me</a></li>
+        </ul>
+        <a class="mobile-nav-icon js--nav-icon"><span class="iconify" data-icon="ant-design:unordered-list-outlined" data-inline="false"></span></a>
+      </div>
+    </nav>
+    <div class="hero-text-box">
+      <h1>Welcome.</h1>
+    </div>
 
-  <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
-  <script src="js/handtrack.min.js"> </script>
-  <script src="js/index.js"></script>
+  </header>
+
+  <!-- <img id="img" src="hand.jpg"/>  -->
+  <section class="js--section-features" id="tops">
+      <div class="row">
+          <h2>
+              This section is designed to draw a dragon tracking the hand movement.
+          </h2>
+      </div>
+      <div class="row">
+          <h3>How it works &mdash; Simple</h3>
+      </div>
+      <div class="row">
+          <div class="col span-1-of-2 steps-box">
+              <img src="resources/images/steps.png" alt="how it works" class="app-screen js--wp-2">
+          </div>
+          <div class="col span-1-of-2 steps-box">
+              <div class="works-step clearfix">
+                  <div>1</div>
+                  <p>Click the toggle button to open your camera.</p>
+              </div>
+              <div class="works-step clearfix">
+                  <div>2</div>
+                  <p>Shake your hand within the camera.</p>
+              </div>
+              <div class="works-step clearfix">
+                  <div>3</div>
+                  <p>Play with it.</p>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <p>FPS is based on the performance of your browser</p>
+          <p>Click the toggle video button to start.</p>
+          <div>
+              <button id="trackbutton" class="bx--btn bx--btn--secondary" type="button" disabled>
+                  Toggle Video
+              </button>
+              <div id="updatenote" class="updatenote"> loading model ..</div>
+          </div>
+          <video class="videobox canvasbox" autoplay="autoplay" id="myvideo" style="display: none;"></video>
+          <canvas id="canvas" class="border canvasbox"></canvas>
+
+          <div style="display:none;">
+              <img id="source" src="resources/images/outline_dragon.png" width="300" height="227">
+          </div>
+      </div>
+  </section>
+
+  <section class="section-steps" id="works">
+      <div class="row">
+          <h2>My Works</h2>
+      </div>
+      <div class="row">
+          <h3>Coming Soon!</h3>
+      </div>
+  </section>
+
+  <section class="section-meals" id="about">
+      <div class="row">
+
+      </div>
+      <ul class="meals-showcase clearfix">
+          <li>
+              <figure class="meal-photo">
+                  <img src="resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
+              </figure>
+          </li>
+          <li>
+              <figure class="meal-photo">
+                  <img src="resources/img/2.jpg" alt="Simple italian pizza with cherry tomatoes">
+              </figure>
+          </li>
+          <li>
+              <figure class="meal-photo">
+                  <img src="resources/img/3.jpg" alt="Chicken breast steak with vegetables">
+              </figure>
+          </li>
+          <li>
+              <figure class="meal-photo">
+                  <img src="resources/img/4.jpg" alt="Autumn pumpkin soup">
+              </figure>
+          </li>
+      </ul>
+  </section>
+
+  <footer>
+    <div class="row">
+      <div class="col span-1-of-2">
+          <ul class="social-links">
+              <li><a href="https://github.com/DavidShield/"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a></li>
+              <li><a href="https://www.linkedin.com/in/dawei-wang-498b80130/"><span class="iconify" data-icon="ant-design:linkedin-filled" data-inline="false"></span></a></li>
+              <ion-icon name="logo-github"></ion-icon>
+          </ul>
+      </div>
+    </div>
+      <div class="row">
+          <p>
+              This webpage was created for fun and self introduction.<br>
+              If I have unintentially voilate copyright of any persion. I appologize and please contact me. I will remove it immediately.
+          </p>
+          <p>
+              Build with <span class="iconify" data-icon="emojione:heart-suit" data-inline="false"></span> in the New York City.
+          </p>
+      </div>
+  </footer>
+
+  <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+  <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <script src="vendors/js/handtrack.min.js"> </script>
+  <script src="resources/js/index.js"></script>
+  <script src="resources/js/script.js"></script>
 </body>
 
 </html>

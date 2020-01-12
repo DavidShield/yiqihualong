@@ -59,6 +59,8 @@ function runDetection() {
     });
 }
 
+
+
 // Load the model.
 handTrack.load(modelParams).then(lmodel => {
     // detect objects in the image.
