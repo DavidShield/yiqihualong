@@ -59,12 +59,15 @@ function runDetection() {
     });
 }
 
-
-
-// Load the model.
-handTrack.load(modelParams).then(lmodel => {
-    // detect objects in the image.
-    model = lmodel
-    updateNote.innerText = "Loaded Model!"
-    trackButton.disabled = false
+updateNote.addEventListener("click", function(){
+    // Load the model.
+    handTrack.load(modelParams).then(lmodel => {
+        // detect objects in the image.
+        model = lmodel
+        updateNote.innerText = "Model Loaded!"
+        updateNote.disabled = true
+        trackButton.disabled = false
+    });
 });
+
+
