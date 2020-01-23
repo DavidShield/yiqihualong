@@ -98,6 +98,9 @@ h2:after {
     margin-top: 30px;
 }
 
+.hero {
+    color: #ccc;
+}
 
 /* ----- LINKS ----- */
 
@@ -209,7 +212,7 @@ header {
 /* Works */
 /* ----------------------------------------------- */
 .works {
-    min-height: 100vh;
+    min-height: 50vh;
 }
 
 .section-steps {
@@ -291,7 +294,7 @@ header {
 /* Abouts */
 /* ----------------------------------------------- */
 .about {
-    min-height: 100vh;
+    min-height: 850px;
     position: relative;
 }
 
@@ -333,6 +336,19 @@ header {
     transform: scale(1.03);
 }
 
+.portfolio {
+    width: 50%;
+    margin: auto 100px;
+    border-radius: 10%;
+}
+
+.about-social-media {
+    margin: 50px auto;
+}
+
+.about-social-media a {
+    margin: 50px 20px 0 0;
+}
 /* ----------------------------------------------- */
 /* FOOTER */
 /* ----------------------------------------------- */
