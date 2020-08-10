@@ -61,13 +61,13 @@ function runDetection() {
 
 updateNote.addEventListener("click", function(){
     // Load the model.
+    $("#loading-wrapper").show();
     handTrack.load(modelParams).then(lmodel => {
         // detect objects in the image.
+        $("#loading-wrapper").hide();
         model = lmodel
         updateNote.innerText = "Model Loaded!"
         updateNote.disabled = true
         trackButton.disabled = false
     });
 });
-
-
